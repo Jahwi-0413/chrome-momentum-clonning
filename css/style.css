@@ -1,3 +1,12 @@
 .hidden{
   display: none;
 }
+
+.bgd-img{
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position:absolute;  /*absolute -> 상위 요소 기준*/
+  top: 0;
+  left: 0;
+}
