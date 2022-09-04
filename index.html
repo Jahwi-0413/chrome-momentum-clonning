@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/todo.css" />
+    <link rel="stylesheet" href="/css/login.css" />
     <title>Momentum</title>
   </head>
   <body>
     <!-- input의 유효성 검사는 form 안에서만 가능-->
     <!-- form submit시 새로고침 -->
-    <form id="login-form" class="hidden">
-      <input required maxlength="15" type="text" placeholder="what is your name?" />
-      <button>Log In</button>
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a ToDo and Press Enter" required />
-    </form>
+    <div class="center-container">
+      <label id="greeting">what's your name?</label><br />
+      <div>
+        <input id="login-input" class="login" required maxlength="15" type="text" />
+      </div>
+      <h2 id="clock">00:00:00</h2>
+      <form id="todo-form">
+        <input type="text" placeholder="Write a ToDo and Press Enter" required />
+      </form>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- <h1 id="greeting" class="hidden"></h1> -->
     <div class="todo-list-container">
       <ul id="todo-list"></ul>
-    </div>
-    <div id="quote">
-      <span></span>
-      <span></span>
     </div>
     <div id="weather">
       <span></span>
