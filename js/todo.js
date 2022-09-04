@@ -29,8 +29,8 @@ function paintToDo(newToDo){    //obj
   button.innerText = "X";
   button.addEventListener("click", deleteToDo);
 
-  li.appendChild(span);
   li.appendChild(button);
+  li.appendChild(span);
   toDoList.appendChild(li);
 }
 
@@ -51,9 +51,11 @@ function handelToDoSubmit(event){
 }
 toDoForm.addEventListener("submit", handelToDoSubmit);
 
-const savedToDos = localStorage.getItem(TODOS_KEY);
-if(savedToDos!==null){
-  const parsedToDos = JSON.parse(savedToDos);
-  toDos = parsedToDos;
-  parsedToDos.forEach(paintToDo);
+if(savedUserName!==null){   //사용자가 등록되어 있을때만
+  const savedToDos = localStorage.getItem(TODOS_KEY);
+  if(savedToDos!==null){
+    const parsedToDos = JSON.parse(savedToDos);
+    toDos = parsedToDos;
+    parsedToDos.forEach(paintToDo);
+  }
 }

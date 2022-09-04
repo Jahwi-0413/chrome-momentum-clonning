@@ -1,0 +1,33 @@
+.todo-list-container ul {
+  position: absolute;
+  bottom: 0.5%;
+  right: 1%;
+  opacity: 0;
+}
+
+.todo-list-container ul li {
+  margin-top: 10px;
+  color:white;
+}
+
+.todo-list-container :hover {
+  animation: todo-appear 1s forwards;     /*forwards-> 마지막 프레임 유지*/
+}
+
+/* appear animation */
+@keyframes todo-appear {
+  from {
+    opcaity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#todo-list li {
+  font-size: 25px;
+}
+
+#todo-list>li button {
+  margin-right: 10px;
+}
