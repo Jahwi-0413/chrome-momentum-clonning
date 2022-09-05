@@ -1,0 +1,8 @@
+#quote{
+  position: absolute;
+  font-size: 1.2rem;
+  bottom:0;
+  margin-bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);   /*x축, y축 거리만큼 이동*/
+}
