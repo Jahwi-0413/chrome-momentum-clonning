@@ -5,6 +5,8 @@ const link = document.querySelector("a");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
+const LOGOUT_TEXT_SIZE = "not-login-text";
+const LOGIN_TEXT_SIZE = "login-text";
 
 function onKeyUp(event){    //SubmitEvent{} - 모든 evenet
   // event.preventDefault();     //새로고침을 막음
@@ -13,11 +15,14 @@ function onKeyUp(event){    //SubmitEvent{} - 모든 evenet
     localStorage.setItem(USERNAME_KEY, userName);
     loginInput.classList.add(HIDDEN_CLASSNAME);
   
+    runClock();
     paintGreeting(userName);
   }
 }
 
 function paintGreeting(username){
+  greeting.classList.remove(LOGOUT_TEXT_SIZE);
+  greeting.classList.add(LOGIN_TEXT_SIZE);
   greeting.innerHTML = `Hi, ${username}`;
   loginInput.classList.add(HIDDEN_CLASSNAME);
 }

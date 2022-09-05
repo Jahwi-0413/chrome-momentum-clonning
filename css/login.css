@@ -7,7 +7,7 @@
 }
 
 #greeting{
-  font-size: 2.3rem;   /*rem -> html 기준 크기*/
+  /* font-size: 2.3rem;   rem -> html 기준 크기 */
   line-height: 0.5;
   font-style: bold;
 }
@@ -20,5 +20,13 @@
   outline: 0;
   background: transparent;
   border-bottom: 1.5px solid white;
+  margin-top: 2rem;
   /* border-left-style: none; */
+}
+
+.not-login-text{
+  font-size: 5rem;
+}
+.login-text{
+  font-size:2.5rem;
 }
