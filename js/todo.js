@@ -1,5 +1,4 @@
-const toDoForm = document.querySelector("#todo-form");
-const toDoInput = toDoForm.querySelector("input");
+const toDoInput = document.querySelector(".todo-input");
 const toDoList = document.querySelector("#todo-list");
 
 const TODOS_KEY = "todos";
@@ -34,9 +33,8 @@ function paintToDo(newToDo){    //obj
   toDoList.appendChild(li);
 }
 
-function handelToDoSubmit(event){
-  event.preventDefault();
-
+function onKeyUpToDo(event){
+  if(event.keyCode===13){
   const newToDo = toDoInput.value;
   toDoInput.value = "";
 
@@ -48,8 +46,9 @@ function handelToDoSubmit(event){
 
   paintToDo(newToDoObj);
   saveToDos();
+  }
 }
-toDoForm.addEventListener("submit", handelToDoSubmit);
+toDoInput.addEventListener("keyup", onKeyUpToDo);
 
 if(savedUserName!==null){   //사용자가 등록되어 있을때만
   const savedToDos = localStorage.getItem(TODOS_KEY);

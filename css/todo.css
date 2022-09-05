@@ -24,6 +24,35 @@
   }
 }
 
+#todo-question{
+  font-size: 2rem;
+}
+
+.todo-question-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.todo-question-container:hover{
+  animation: todo-appear 1s forwards;
+  margin-top: 1%;
+}
+
+.todo-input {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 15rem;
+  border: none;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1.5px solid white;
+  margin-top: 10px;
+  /* border-left-style: none; */
+}
+
 #todo-list li {
   font-size: 25px;
 }
