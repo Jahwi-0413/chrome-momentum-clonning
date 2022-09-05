@@ -38,7 +38,6 @@
 
 .todo-question-container:hover{
   animation: todo-appear 1s forwards;
-  margin-top: 1%;
 }
 
 .todo-input {

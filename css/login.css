@@ -10,6 +10,7 @@
   /* font-size: 2.3rem;   rem -> html 기준 크기 */
   line-height: 0.5;
   font-style: bold;
+  margin-bottom: 10px;
 }
 
 #login-input{

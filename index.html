@@ -15,16 +15,17 @@
   <body>
     <!-- input의 유효성 검사는 form 안에서만 가능-->
     <!-- form submit시 새로고침 -->
-    <div style="height: 30vh"></div>
-    <div class="center-container">
-      <div id="clock" class="hidden">00:00:00</div>
-      <label id="greeting" class="not-login-text">what's your name?</label><br />
-      <div>
-        <input id="login-input" class="login" required maxlength="15" type="text" />
-      </div>
-      <div class="todo-question-container">
-        <label id="todo-question">What will you focus on today?</label>
-        <input class="todo-input" type="text" />
+    <div class="main-content">
+      <div class="center-container">
+        <div id="clock" class="hidden">00:00:00</div>
+        <label id="greeting" class="not-login-text">what's your name?</label><br />
+        <div>
+          <input id="login-input" class="login" required maxlength="15" type="text" />
+        </div>
+        <div class="todo-question-container">
+          <label id="todo-question">What will you focus on today?</label>
+          <input class="todo-input" type="text" />
+        </div>
       </div>
     </div>
     <div id="quote">
@@ -39,10 +40,10 @@
       <span></span><br />
       <span></span>
     </div>
+    <script src="/js/background.js"></script>
     <script src="/js/greetings.js"></script>
     <script src="/js/clock.js"></script>
     <script src="/js/quotes.js"></script>
-    <script src="/js/background.js"></script>
     <script src="/js/todo.js"></script>
     <script src="/js/weather.js"></script>
   </body>
