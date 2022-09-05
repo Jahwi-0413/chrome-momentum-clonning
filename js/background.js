@@ -1,8 +1,9 @@
-const images = ["0.jpeg", "1.jpeg", "2.jpeg"];
+const imagesSize = 24;
 
-const choseImage = images[Math.floor(Math.random() * images.length)];
+const choseImage = Math.floor(Math.random() * imagesSize);
 
 const image = document.createElement("img");
-image.src = `img/${choseImage}`;
+image.src = `img/${choseImage}.jpg`;
 image.classList.add("bgd-img");
+
 document.body.appendChild(image);
