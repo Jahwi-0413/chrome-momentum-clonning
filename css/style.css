@@ -1,5 +1,6 @@
 *{
   color:white;
+    -webkit-user-select: none;    /*드래그 금지*/
 }
 
 .hidden{

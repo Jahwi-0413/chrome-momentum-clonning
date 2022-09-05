@@ -1,0 +1,8 @@
+#clock{
+  font-size: 8.5rem;
+  font-style: bold;
+}
+
+#clock:hover{
+  cursor:default;
+}

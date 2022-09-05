@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/todo.css" />
     <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/clock.css" />
     <title>Momentum</title>
   </head>
   <body>
     <!-- input의 유효성 검사는 form 안에서만 가능-->
     <!-- form submit시 새로고침 -->
-    <div style="height: 20vh"></div>
+    <div style="height: 30vh"></div>
     <div class="center-container">
+      <div id="clock">00:00:00</div>
       <label id="greeting">what's your name?</label><br />
       <div>
         <input id="login-input" class="login" required maxlength="15" type="text" />
       </div>
-      <h2 id="clock">00:00:00</h2>
       <form id="todo-form">
         <input type="text" placeholder="Write a ToDo and Press Enter" required />
       </form>

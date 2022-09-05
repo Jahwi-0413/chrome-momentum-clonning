@@ -7,7 +7,9 @@
 }
 
 #greeting{
-  font-size: 4.3rem;   /*rem -> html 기준 크기*/
+  font-size: 2.3rem;   /*rem -> html 기준 크기*/
+  line-height: 0.5;
+  font-style: bold;
 }
 
 #login-input{

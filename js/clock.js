@@ -6,7 +6,7 @@ function getClock(){
   const minutes = String(date.getMinutes()).padStart(2, "0");
   const seconds = String(date.getSeconds()).padStart(2, "0");
 
-  clock.innerHTML= `${hours}:${minutes}:${seconds}`;
+  clock.innerHTML= `${hours}:${minutes}`;
 }
 getClock()    //새로고침시 1초를 기다리지 않기 위해서
 setInterval(getClock, 1000);
