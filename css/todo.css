@@ -10,7 +10,7 @@
   color:white;
 }
 
-.todo-list-container :hover {
+.todo-list-container :hover{
   animation: todo-appear 1s forwards;     /*forwards-> 마지막 프레임 유지*/
 }
 
@@ -58,4 +58,8 @@
 
 #todo-list>li button {
   margin-right: 10px;
+}
+
+ul {
+  list-style: none;
 }

@@ -15,7 +15,10 @@ function deleteToDo(event){
   const li = event.target.parentElement;
   toDos = toDos.filter((toDo) => toDo.id!==parseInt(li.id));  //toDo.id->num, li.id->
   saveToDos();
-  li.remove();
+  li.style.textDecoration = "line-through";
+  setTimeout(function(){
+      li.remove();
+  }, 2000);
 }
 
 function paintToDo(newToDo){    //obj
