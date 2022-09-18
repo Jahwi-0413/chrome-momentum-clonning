@@ -33,11 +33,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0;
+  margin-top: 10px;
 }
 
-.todo-question-container:hover{
-  animation: todo-appear 1s forwards;
+.todo-question-container-hide{
+  visibility: hidden;
 }
 
 .todo-input {

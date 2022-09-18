@@ -17,6 +17,7 @@ function onKeyUp(event){    //SubmitEvent{} - 모든 evenet
   
     runClock();
     paintGreeting(userName);
+    questionContainer.classList.remove("todo-question-container-hide");
   }
 }
 

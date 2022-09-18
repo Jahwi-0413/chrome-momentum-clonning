@@ -1,5 +1,6 @@
 const toDoInput = document.querySelector(".todo-input");
 const toDoList = document.querySelector("#todo-list");
+const questionContainer = document.querySelector(".todo-question-container");
 
 const TODOS_KEY = "todos";
 let toDos = [];
@@ -52,6 +53,7 @@ toDoInput.addEventListener("keyup", onKeyUpToDo);
 
 if(savedUserName!==null){   //사용자가 등록되어 있을때만
   const savedToDos = localStorage.getItem(TODOS_KEY);
+  questionContainer.classList.remove("todo-question-container-hide");
   if(savedToDos!==null){
     const parsedToDos = JSON.parse(savedToDos);
     toDos = parsedToDos;
