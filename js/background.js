@@ -1,4 +1,4 @@
-const imagesSize = 22;
+const imagesSize = 15;
 
 const choseImage = Math.floor(Math.random() * imagesSize);
 
