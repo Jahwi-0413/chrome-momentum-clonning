@@ -1,5 +1,7 @@
 # momentum-clonning with vanillaJS
 
+![momentum_clone_result](https://user-images.githubusercontent.com/58069290/190911728-22a30c82-d72d-46e0-8163-d0fffae96b2f.gif)
+
 ## 기능
 - 사용자의 이름을 입력받아 저장 및 활용
 - 사용자에게 to do를 입력받아 업데이트
